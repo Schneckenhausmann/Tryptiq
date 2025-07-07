@@ -1,10 +1,10 @@
-# <img src="docs/images/icon-256.png" width="64" height="64" align="left"> Tryptiq - Professional Triptych Creation Tool
-
-
+# Tryptiq - Professional Triptych Creation Tool
 
 
 <div align="center">
+<img src="docs/images/icon-256.png" width="128" height="128"> 
 <h3>Create stunning photo triptychs with elegant simplicity</h3>
+
 ![Platform](https://img.shields.io/badge/Platform-macOS-blue) ![Version](https://img.shields.io/badge/Version-1.0.0-green) ![License](https://img.shields.io/badge/License-MIT-orange) ![Swift](https://img.shields.io/badge/Swift-5.0-red)
 
 </div>
