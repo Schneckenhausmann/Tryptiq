@@ -1,10 +1,11 @@
 # <img src="docs/images/icon-256.png" width="64" height="64" align="left"> Tryptiq - Professional Triptych Creation Tool
 
-> **Create stunning photo triptychs with elegant simplicity**
-
+**Create stunning photo triptychs with elegant simplicity**
 
 <div align="center">
+
 ![Platform](https://img.shields.io/badge/Platform-macOS-blue) ![Version](https://img.shields.io/badge/Version-1.0.0-green) ![License](https://img.shields.io/badge/License-MIT-orange) ![Swift](https://img.shields.io/badge/Swift-5.0-red)
+
 </div>
 
 Tryptiq is a beautiful, modern macOS application designed for photographers, artists, and creative professionals who want to create compelling three-panel compositions from their photos. With its intuitive drag-and-drop interface and powerful export capabilities, Tryptiq makes it effortless to transform your individual images into cohesive artistic statements.
