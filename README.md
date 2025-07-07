@@ -1,4 +1,4 @@
-# Tryptiq
+# <img src="docs/images/icon-256.png" width="64" height="64" align="left"> Tryptiq
 
 > **Create stunning photo triptychs with elegant simplicity**
 
