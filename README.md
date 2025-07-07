@@ -1,12 +1,35 @@
-# <img src="docs/images/icon-256.png" width="64" height="64" align="left"> Tryptiq
+# <img src="docs/images/icon-256.png" width="64" height="64" align="left"> Tryptiq - Professional Triptych Creation Tool
 
 > **Create stunning photo triptychs with elegant simplicity**
 
+![Platform](https://img.shields.io/badge/Platform-macOS-blue) ![Version](https://img.shields.io/badge/Version-1.0.0-green) ![License](https://img.shields.io/badge/License-MIT-orange) ![Swift](https://img.shields.io/badge/Swift-5.0-red)
+
 Tryptiq is a beautiful, modern macOS application designed for photographers, artists, and creative professionals who want to create compelling three-panel compositions from their photos. With its intuitive drag-and-drop interface and powerful export capabilities, Tryptiq makes it effortless to transform your individual images into cohesive artistic statements.
+
+## 📱 Screenshot
 
 ![Tryptiq Screenshot](docs/images/Screenshot.png)
 
 *Create stunning three-panel compositions with Tryptiq's intuitive interface*
+
+## 🎥 Video Demo
+
+🎬 *Coming Soon - Watch Tryptiq in action with real-time preview and drag-and-drop capabilities!*
+
+## 📋 Supported Image Formats
+
+**Input Formats:**
+- **JPEG** (.jpg, .jpeg) - Standard photo format
+- **PNG** (.png) - Lossless with transparency support  
+- **TIFF** (.tiff, .tif) - High-quality uncompressed
+- **HEIC/HEIF** (.heic, .heif) - Modern Apple photo format
+- **GIF** (.gif) - Animated and static images
+- **BMP** (.bmp) - Windows bitmap format
+- **WebP** (.webp) - Modern web format
+- **RAW** (Various camera formats) - Professional photography
+
+**Output Format:**
+- **PNG** - High-quality lossless export optimized for printing and digital display
 
 ## ✨ Features
 
@@ -33,54 +56,124 @@ Tryptiq is a beautiful, modern macOS application designed for photographers, art
 - **Custom Icon**: Hand-crafted app icon reflecting the triptych concept
 - **Smooth Animations**: Subtle, polished transitions and interactions
 
+### ⚡ **Performance Features**
+- **Real-time Processing**: Instant preview updates with smooth UI responsiveness
+- **Memory Efficient**: Optimized image handling for large photo collections
+- **Adaptive Resolution**: Smart scaling prevents quality loss while maintaining performance
+- **Background Processing**: Non-blocking export operations keep UI responsive
+- **Smart Caching**: Optimized image loading and preview generation
+
 ## 🖥️ System Requirements
 
 - **macOS**: 14.0 (Sonoma) or later
-- **Architecture**: Apple Silicon (M1/M2/M3) or Intel
+- **Architecture**: Universal (Apple Silicon + Intel)
 - **Memory**: 4GB RAM recommended
 - **Storage**: 50MB for application
+- **Development**: Xcode 14.0+ (for building from source)
 
-## 📥 Installation
+## 🚀 Quick Start
 
-### Option 1: Download Release (Recommended)
+### Download & Install
 1. Download the latest `Tryptiq.dmg` from [Releases](releases/)
 2. Double-click to mount the disk image
 3. Drag Tryptiq to your Applications folder
 4. Launch from Applications or Spotlight
 
-### Option 2: Build from Source
+### First Launch
+- macOS may show a security warning - right-click the app and select "Open"
+- Grant file access permissions when prompted for optimal experience
+
+## 🏗️ Building from Source
+
+### Option 1: Using Xcode (Recommended)
 ```bash
+# Clone the project
 git clone https://github.com/yourname/tryptiq.git
 cd tryptiq
+
+# Open in Xcode
 open Tryptiq.xcodeproj
-# Build and run in Xcode (⌘+R)
+```
+- Press `Cmd+R` to build and run
+- Or use `Product` → `Run`
+
+### Option 2: Command Line Build
+```bash
+# Build for release
+xcodebuild -project Tryptiq.xcodeproj -scheme Tryptiq -configuration Release build
+
+# Locate built app
+open build/Release/
 ```
 
-## 🎯 Quick Start Guide
+## 📖 How to Use
+
+### Creating Your First Triptych
 
 1. **Launch Tryptiq** - Open the app from your Applications folder
-2. **Choose Canvas Format** - Select your preferred aspect ratio (16:9, 4:3, 1:1, 3:2)
-3. **Add Images** - Drag photos from Finder into the Left, Center, and Right panels
-4. **Arrange & Scale** - Drag images between slots to reorder; use the slider to resize
-5. **Export** - Click "Export Triptych" and choose where to save your creation
+2. **Select Canvas Format** - Choose your preferred aspect ratio:
+   - **16:9** - Widescreen format for digital displays
+   - **4:3** - Classic photo proportions
+   - **1:1** - Square format for social media
+   - **3:2** - Traditional photography ratio
+3. **Add Images** - Drag photos from Finder into the three panels:
+   - **Left Panel** - Your opening image
+   - **Center Panel** - The focal centerpiece
+   - **Right Panel** - Your closing composition
+4. **Arrange & Scale**:
+   - **Rearrange**: Drag images between slots to reorder
+   - **Scale**: Use the slider to resize all images (0.5x to 2.0x)
+   - **Preview**: Watch real-time updates as you adjust
+5. **Export Your Creation**:
+   - Click "Export Triptych"
+   - Choose save location in the file picker
+   - Your triptych saves as a high-quality PNG
 
-> 💡 **Pro Tip**: For best results, use high-resolution source images. Tryptiq will automatically optimize the output resolution based on your largest image.
+### Advanced Techniques
 
-## 🔧 Advanced Features
+#### Image Rearranging
+- **Internal Drag**: Drag any image to a different slot to swap positions
+- **Visual Feedback**: Hover effects show valid drop zones
+- **Smart Swapping**: Images automatically exchange positions
 
-### Image Rearranging
-- **Drag Between Slots**: Click and drag any image to a different position
-- **Visual Feedback**: Hover effects show where images will be placed
-- **Swap Function**: Images automatically swap positions when dragged
+#### Optimal Composition Tips
+- **Rule of Thirds**: Consider visual balance across all three panels
+- **Color Harmony**: Choose images with complementary color palettes
+- **Narrative Flow**: Create visual stories that read from left to right
+- **Scale Consistency**: Use similar scaling for cohesive appearance
 
-### Export Options
-- **Adaptive Resolution**: Output size scales with your source images
-- **Quality Preservation**: Maintains aspect ratios and prevents upscaling artifacts
-- **File Naming**: Exports with "triptych_" prefix and timestamp for organization
+## ⚙️ Processing Algorithm
 
-### Supported Formats
-**Input**: JPEG, PNG, TIFF, GIF, BMP, HEIC, WebP, RAW formats  
-**Output**: High-quality PNG files
+### Canvas Calculation
+1. **Aspect Ratio Application**: Canvas dimensions calculated from selected ratio
+2. **Adaptive Resolution**: Base resolution determined by largest source image
+3. **Quality Preservation**: Minimum 1200px width ensures print quality
+4. **Proportional Scaling**: Images scaled to fit while maintaining aspect ratios
+5. **Center Positioning**: All images centered within their respective panels
+
+### Export Process
+- **Resolution Analysis**: Examines all source images for optimal output size
+- **Smart Scaling**: Uses `max(largest_dimension, 1200px)` as baseline
+- **Quality Interpolation**: High-quality resampling prevents artifacts
+- **Format Optimization**: PNG export with optimal compression settings
+
+## 🔧 Troubleshooting
+
+### Installation Issues
+- **Gatekeeper Warning**: Right-click app and select "Open" to bypass security warning
+- **Permission Denied**: Check `System Settings` → `Privacy & Security`
+- **App Won't Launch**: Ensure macOS 14.0+ and try restarting
+
+### Runtime Issues
+- **Images Won't Drop**: Ensure files are supported formats and not corrupted
+- **Slow Performance**: Try smaller images or restart the app to clear memory
+- **Export Fails**: Check destination folder permissions and available disk space
+- **Low Quality Output**: Use higher resolution source images for better results
+
+### Interface Issues
+- **UI Not Responsive**: Restart app or check Activity Monitor for high CPU usage
+- **Canvas Too Small**: Resize window or select different aspect ratio
+- **Images Appear Blurry**: Ensure scaling is appropriate and source quality is good
 
 ## 📚 Documentation
 
@@ -95,17 +188,24 @@ For detailed guides and technical information, see our [Documentation](docs/):
 ```
 Tryptiq/
 ├── Tryptiq.xcodeproj/          # Xcode project configuration
-├── Tryptiq/                    # Source code
+│   ├── project.pbxproj         # Build settings and file references
+│   └── xcshareddata/           # Shared schemes and settings
+├── Tryptiq/                    # Source code directory
 │   ├── TryptiqApp.swift        # App entry point and window configuration
 │   ├── ContentView.swift       # Root view wrapper
 │   ├── TriptychView.swift      # Main interface with image slots and controls
 │   ├── ImageSlot.swift         # Individual draggable image containers
 │   ├── TryptiqLogo.swift       # Custom app icon and branding
-│   ├── Assets.xcassets/        # App icons, colors, and assets
+│   ├── Assets.xcassets/        # App icons, colors, and visual assets
 │   ├── Preview Content/        # SwiftUI preview assets
 │   ├── Tryptiq.entitlements   # App sandbox permissions
 │   └── Info.plist             # App metadata and configuration
 ├── docs/                       # Documentation and guides
+│   ├── images/                 # Screenshots and assets
+│   ├── user-guide.md          # Comprehensive user manual
+│   ├── technical.md           # Architecture and development docs
+│   └── releases.md            # Version history and roadmap
+├── LICENSE                     # MIT License
 └── README.md                   # This file
 ```
 
@@ -113,27 +213,41 @@ Tryptiq/
 
 Tryptiq is built with modern Apple technologies for optimal performance and native macOS integration:
 
+### Core Technologies
 - **SwiftUI**: Declarative UI framework for smooth, responsive interface
-- **Combine**: Reactive programming for state management
+- **Combine**: Reactive programming for state management and data flow
 - **Core Graphics**: High-performance image processing and rendering
 - **AppKit Integration**: Native file dialogs and system services
 - **App Sandboxing**: Secure, permission-based file access
 
 ### Key Components
-
 - **TriptychView**: Main interface coordinating image slots and export functionality
 - **ImageSlot**: Reusable component handling drag-drop, scaling, and visual feedback  
 - **ImageDropDelegate**: Custom drop handling for internal rearranging vs external drops
 - **Adaptive Layout**: GeometryReader-based responsive design system
 
+### Performance Optimizations
+- **Asynchronous Processing**: Background image operations keep UI responsive
+- **Memory Management**: Efficient image loading and disposal patterns
+- **Real-time Updates**: Optimized preview generation and caching
+- **Smart Rendering**: Conditional updates based on state changes
+
 ## 🤝 Contributing
 
-Interested in contributing? We welcome:
+We welcome contributions! Please see our [Contributing Guidelines](docs/contributing.md) for details.
 
+1. **Fork the repository**
+2. **Create a feature branch** (`git checkout -b feature/amazing-feature`)
+3. **Commit your changes** (`git commit -m 'Add amazing feature'`)
+4. **Push to the branch** (`git push origin feature/amazing-feature`)
+5. **Open a Pull Request**
+
+### Ways to Contribute
 - **Bug Reports**: Found an issue? [Open an issue](issues/new)
 - **Feature Requests**: Have an idea? [Start a discussion](discussions/)
-- **Code Contributions**: See our [Contributing Guide](docs/contributing.md)
+- **Code Contributions**: Submit pull requests for fixes or enhancements
 - **Documentation**: Help improve our guides and examples
+- **Testing**: Try beta versions and provide feedback
 
 ## 📄 License
 
@@ -141,12 +255,15 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙏 Acknowledgments
 
-- Inspired by the artistic tradition of triptych art
-- Built with love for the macOS creative community
-- Thanks to all beta testers and contributors
+- Built with ❤️ using SwiftUI and AppKit
+- Inspired by the artistic tradition of triptych art and the need for modern creative tools
+- Special thanks to the Swift and macOS developer communities
+- Thanks to all beta testers and contributors who helped shape Tryptiq
 
 ---
 
-**Made with ❤️ for macOS creators**
+**Made with ❤️ for photographers, creators, and professionals**
+
+If you find Tryptiq useful, please consider ⭐ starring the repository!
 
 [Website](https://your-website.com) • [Support](mailto:support@your-email.com) • [Twitter](https://twitter.com/yourhandle) 
