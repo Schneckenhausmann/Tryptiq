@@ -1,5 +1,6 @@
 # <img src="docs/images/icon-256.png" width="64" height="64" align="left"> Tryptiq - Professional Triptych Creation Tool
 
+
 **Create stunning photo triptychs with elegant simplicity**
 
 <div align="center">
