@@ -31,7 +31,6 @@ Tryptiq is a beautiful, modern macOS application designed for photographers, art
 - **GIF** (.gif) - Animated and static images
 - **BMP** (.bmp) - Windows bitmap format
 - **WebP** (.webp) - Modern web format
-- **RAW** (Various camera formats) - Professional photography
 
 **Output Format:**
 - **PNG** - High-quality lossless export optimized for printing and digital display
