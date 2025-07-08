@@ -56,13 +56,7 @@ Tryptiq is a beautiful, modern macOS application designed for photographers, art
 - **High-Quality Output**: Adaptive resolution based on your source images
 - **Smart Resolution**: Automatically scales to preserve image quality (minimum 1200px)
 - **PNG Export**: Clean, lossless output perfect for printing or digital display
-- **Instant Save**: One-click export with system file picker
-
-### 🎭 **Beautiful Design**
-- **Dark Mode**: Elegant dark interface that lets your photos shine
-- **Gradient Aesthetics**: Smooth blue-to-purple gradients throughout the UI
-- **Custom Icon**: Hand-crafted app icon reflecting the triptych concept
-- **Smooth Animations**: Subtle, polished transitions and interactions
+- **Instant Save**: One-click export with system file 
 
 ### ⚡ **Performance Features**
 - **Real-time Processing**: Instant preview updates with smooth UI responsiveness
