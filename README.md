@@ -5,7 +5,7 @@
 <img src="docs/images/icon-256.png" width="128" height="128"> 
 <h3>Create stunning photo triptychs with elegant simplicity</h3>
 
-![Platform](https://img.shields.io/badge/Platform-macOS-blue) ![Version](https://img.shields.io/badge/Version-1.0.0-green) ![License](https://img.shields.io/badge/License-MIT-orange) ![Swift](https://img.shields.io/badge/Swift-5.0-red)
+![Platform](https://img.shields.io/badge/Platform-macOS-blue) ![License](https://img.shields.io/badge/License-MIT-orange) ![Swift](https://img.shields.io/badge/Swift-5.0-red)
 
 </div>
 
@@ -19,7 +19,10 @@ Tryptiq is a beautiful, modern macOS application designed for photographers, art
 
 ## 🎥 Video Demo
 
-🎬 *Coming Soon - Watch Tryptiq in action with real-time preview and drag-and-drop capabilities!*
+<div align="center">
+  <img src="docs/images/Video.gif" alt="Tryptiq Video" width="800">
+  <p><em>🎬 Watch Tryptiq in action!</em></p>
+</div>
 
 ## 📋 Supported Image Formats
 
