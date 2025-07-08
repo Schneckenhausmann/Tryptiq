@@ -17,6 +17,7 @@ Tryptiq is a beautiful, modern macOS application designed for photographers, art
 
 <div align="center"> 
 <p><em> Create stunning three-panel compositions with Tryptiq's intuitive interface! </em></p>
+</div>
 
 ## 🎥 Video Demo
 
