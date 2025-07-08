@@ -24,7 +24,7 @@ Tryptiq is a beautiful, modern macOS application designed for photographers, art
 <div align="center">
   <img src="docs/images/Video.gif" alt="Tryptiq Video" width="800">
   <p><em>🎬 Watch Tryptiq in action!</em></p>
-</div>
+</div> 
 
 ## 📋 Supported Image Formats
 
