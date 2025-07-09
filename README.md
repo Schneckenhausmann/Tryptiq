@@ -234,23 +234,6 @@ Tryptiq is built with modern Apple technologies for optimal performance and nati
 - **Real-time Updates**: Optimized preview generation and caching
 - **Smart Rendering**: Conditional updates based on state changes
 
-## 🤝 Contributing
-
-We welcome contributions! Please see our [Contributing Guidelines](docs/contributing.md) for details.
-
-1. **Fork the repository**
-2. **Create a feature branch** (`git checkout -b feature/amazing-feature`)
-3. **Commit your changes** (`git commit -m 'Add amazing feature'`)
-4. **Push to the branch** (`git push origin feature/amazing-feature`)
-5. **Open a Pull Request**
-
-### Ways to Contribute
-- **Bug Reports**: Found an issue? [Open an issue](issues/new)
-- **Feature Requests**: Have an idea? [Start a discussion](discussions/)
-- **Code Contributions**: Submit pull requests for fixes or enhancements
-- **Documentation**: Help improve our guides and examples
-- **Testing**: Try beta versions and provide feedback
-
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
